@@ -1,0 +1,258 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f8ff;
+    display: flex;              /* 🔥 IMPORTANT */
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #619bf3;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #4a7edb;   /* 🔥 FIXED HOVER */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+}
+
+.main-content h2 {
+    color: #619bf3;
+    margin-bottom: 15px;
+}
+
+/* -------- Cards -------- */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* Card Text */
+.card h3 {
+    font-size: 18px;
+    color: #486897;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: #4a7edb;
+}
+/* Button Colors */
+.card:nth-child(1) a {
+    background: #28a745;
+}
+
+.card:nth-child(2) a {
+    background: #ffc107;
+    color: black;
+}
+
+.card:nth-child(3) a {
+    background: #dc3545;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Cells */
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header */
+th {
+    background: #619bf3;
+    color: white;
+}
+
+/* Rows */
+tr:nth-child(even) {
+    background: #f1f5ff;
+}
+
+tr:hover {
+    background: #dbe5ff;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Form Styling */
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    background: #619bf3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #4a7edb;
+}
+
+/* Container */
+.table-container {
+    width: 90%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+/* Table */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Header */
+.table-container th {
+    background: #4a7edb;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Cells */
+.table-container td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover */
+.table-container tr:hover {
+    background: #f1f7ff;
+}
+
+/* Links */
+a {
+    color: #4a7edb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* No data */
+.table-container td[colspan] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-container {
+        width: 95%;
+    }
+}

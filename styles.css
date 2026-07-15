@@ -1,0 +1,521 @@
+﻿/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #ff6600;
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+/* Left Side */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  color: #1e90ff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  margin-right: 15px;
+  color: #333;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #1e90ff;
+  border-bottom: 2px solid #1e90ff;
+}
+
+/* Right Side */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Username */
+.username {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+/* Search Bar */
+.search-form input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 180px;
+  outline: none;
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.login-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1e90ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #0f6edc;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/* ===== University Content Box ===== */
+.university {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.university.reverse {
+  flex-direction: row-reverse;
+}
+
+.university-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.university-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Image Styling */
+.university-content.image {
+  flex: 1;
+  margin: 10px;
+}
+
+.university-content.image img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Description Styling */
+.university-content.description {
+  flex: 1;
+  padding: 20px;
+}
+
+.university-content h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.university-content p {
+  margin: 5px 0;
+}
+
+.university-content a {
+  font-weight: bold;
+  color: #ff6600;
+}
+table tr {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+table tr:hover {
+  background: #e6f2ff;
+}
+
+.details-box {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.details-box h3 {
+  margin-top: 0;
+  color: #004080;
+}
+
+.details-box a {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.details-box a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Institutes Section */
+.institutes {
+  padding: 60px;
+  background: #fff;
+}
+
+.institutes h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-content: center;
+
+}
+
+.institute {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fafafa;
+  font-weight: bold;
+}
+
+.institute:hover {
+  background: #fff;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* ================= HERO ================= */
+
+.hero {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-box {
+  background: rgba(255,255,255,0.1);
+  padding: 50px 70px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+}
+
+.hero-box h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero-box p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #ffcc00, #ff6600);
+  border-radius: 30px;
+  color: white;
+}
+
+/* ===== CHATBOT FLOAT RIGHT ===== */
+.chat-bubble {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  background: #1e90ff;
+  color: white;   /* 👈 THIS makes text white */
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Chat Icon Button */
+.chat-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e90ff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.chat-icon img {
+  width: 35px;
+}
+
+/* Chat Window */
+.chat-window {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  background: #1e90ff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Chat Body */
+.chat-body {
+  height: 250px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+.chat-input button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  height: 120px;   /* 👈 increase this for bigger size */
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;    /* optional: disable resize */
+}
+/* ================= SECTION ================= */
+
+.section {
+  padding: 50px;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1100px;
+}
+/* ================= LOGOUT ================= */
+.profile-menu .dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 120px;
+}
+.profile-menu .dropdown a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+/* ================= TABLE ================= */
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background: #004080;
+  color: white;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-box {
+    padding: 30px;
+  }
+
+  .hero-box h1 {
+    font-size: 30px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+}

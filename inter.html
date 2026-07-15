@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture Institutes in Gujarat</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>Top International Studies Institutes in Gujarat</h1>
+  </header>
+
+  <table>
+    <tr>
+        <th>Institution</th>
+        <th>Location</th>
+        <th>Program Offered</th>
+    </tr>
+
+    <tr>
+        <td>IIT Gandhinagar</td>
+        <td>Gandhinagar</td>
+        <td>International Exchange & Research Programs</td>
+    </tr>
+
+    <tr>
+        <td>Nirma University</td>
+        <td>Ahmedabad</td>
+        <td>Global MBA & Exchange Programs</td>
+    </tr>
+
+    <tr>
+        <td>The Maharaja Sayajirao University</td>
+        <td>Vadodara</td>
+        <td>International Research Collaborations</td>
+    </tr>
+
+    <tr>
+        <td>Parul University</td>
+        <td>Vadodara</td>
+        <td>International Student Exchange</td>
+    </tr>
+
+    <tr>
+        <td>CHARUSAT</td>
+        <td>Anand</td>
+        <td>International Engineering Programs</td>
+    </tr>
+
+    <tr>
+        <td>Ganpat University</td>
+        <td>Mehsana</td>
+        <td>International Twinning Programs</td>
+    </tr>
+
+    <tr>
+        <td>Navrachana University</td>
+        <td>Vadodara</td>
+        <td>International Design Programs</td>
+    </tr>
+
+    <tr>
+        <td>Silver Oak University</td>
+        <td>Ahmedabad</td>
+        <td>International Study Programs</td>
+    </tr>
+
+    <tr>
+        <td>Indus University</td>
+        <td>Ahmedabad</td>
+        <td>Global Business Programs</td>
+    </tr>
+
+    <tr>
+        <td>Gujarat University</td>
+        <td>Ahmedabad</td>
+        <td>International Student Programs</td>
+    </tr>
+</table>
+
+
+
+
+  <div id="details" class="details-box"></div>
+
+  <a class="back-link" href="index.php">⬅ Back to Home</a>
+
+  <footer>
+    <p>&copy; 2025 Admission Counselling System | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showDetails(univ) {
+      let info = {
+        cept: `<h3>CEPT University</h3>
+               <p>Established in 1962, CEPT is India’s premier institute for architecture, planning, and design. 
+               It has international collaborations, advanced studios, and highly reputed faculty.</p>
+               <p><strong>Specialty:</strong> Consistently ranked as the best in India for architecture education.</p>
+               <p><a href="https://cept.ac.in" target="_blank">Visit Website</a></p>`,
+
+        apied: `<h3>APIED (Sardar Patel University)</h3>
+                <p>Founded in 1980, APIED offers a blend of design and architecture education. 
+                The institute focuses on sustainable planning and practical design exposure.</p>
+                <p><strong>Specialty:</strong> Strong industry partnerships, active student design competitions.</p>
+                <p><a href="http://www.apied.edu.in" target="_blank">Visit Website</a></p>`,
+
+        nirma: `<h3>Nirma University – Institute of Architecture</h3>
+                <p>Nirma University provides COA-approved B.Arch and M.Arch programs, 
+                with a modern multidisciplinary campus and global academic tie-ups.</p>
+                <p><strong>Specialty:</strong> NAAC A+ accreditation, top private university in Gujarat.</p>
+                <p><a href="https://nirmauni.ac.in/architecture" target="_blank">Visit Website</a></p>`,
+
+        swarrnim: `<h3>Swarrnim Institute of Design</h3>
+                   <p>Part of Swarrnim Startup & Innovation University, focusing on 
+                   innovation-driven design and entrepreneurship in architecture.</p>
+                   <p><strong>Specialty:</strong> Startup ecosystem, COA-approved programs.</p>
+                   <p><a href="https://swarrnim.edu.in" target="_blank">Visit Website</a></p>`,
+
+        sal: `<h3>Sal School of Architecture</h3>
+              <p>Approved by the Council of Architecture (COA), SAL emphasizes design studios, 
+              professional exposure, and practical training.</p>
+              <p><strong>Specialty:</strong> Modern infrastructure, strong alumni network.</p>
+              <p><a href="https://sal.edu.in" target="_blank">Visit Website</a></p>`,
+
+        ganpat: `<h3>Ganpat University</h3>
+                 <p>Ganpat University’s architecture school is known for its 
+                 innovation-driven approach and global learning environment.</p>
+                 <p><strong>Specialty:</strong> Industry-supported programs, large green campus.</p>
+                 <p><a href="https://www.ganpatuniversity.ac.in" target="_blank">Visit Website</a></p>`,
+
+        indubhai: `<h3>Indubhai Parekh School of Architecture</h3>
+                   <p>Offers affordable diploma programs in architecture with strong emphasis on 
+                   hands-on training and practical skills.</p>
+                   <p><strong>Specialty:</strong> Regional hub for design learning in Rajkot.</p>
+                   <p><a href="http://ipsarajkot.org" target="_blank">Visit Website</a></p>`,
+
+        gcp: `<h3>GCP Institute</h3>
+              <p>A Surat-based diploma institute in architecture, GCP provides 
+              modern studios, workshops, and COA-approved training.</p>
+              <p><strong>Specialty:</strong> Affordable diploma option, strong local placement opportunities.</p>
+              <p><a href="http://gcpins.ac.in" target="_blank">Visit Website</a></p>`
+      };
+
+      document.getElementById('details').innerHTML = info[univ];
+      document.getElementById('details').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pharmacy Institutes in Gujarat</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table tr {
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+        table tr:hover {
+          background: #e6f2ff;
+        }
+        .details-box {
+          display: none;
+          margin-top: 20px;
+          padding: 15px;
+          border-radius: 8px;
+          background: #f9f9f9;
+          border: 1px solid #ccc;
+          animation: fadeIn 0.5s ease-in-out;
+        }
+        .details-box h3 {
+          margin-top: 0;
+          color: #004080;
+        }
+        .details-box a {
+          color: #0066cc;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        .details-box a:hover {
+          text-decoration: underline;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="top-header">
+        <h1>Top Pharmacy Institutes in Gujarat</h1>
+    </header>
+
+    <!-- Table Section -->
+    <div class="table-container">
+        <table>
+            <tr>
+              <th>Institution</th>
+              <th>Location</th>
+              <th>Programs Offered</th>
+            </tr>
+          
+            <tr onclick="showDetails('lm')">
+              <td>LM College of Pharmacy</td>
+              <td>Ahmedabad</td>
+              <td>B.Pharm, M.Pharm, PhD</td>
+            </tr>
+          
+            <tr onclick="showDetails('nirma')">
+              <td>Nirma University – Institute of Pharmacy</td>
+              <td>Ahmedabad</td>
+              <td>B.Pharm, M.Pharm, PhD</td>
+            </tr>
+          
+            <tr onclick="showDetails('parul')">
+              <td>Parul University – Faculty of Pharmacy</td>
+              <td>Vadodara</td>
+              <td>D.Pharm, B.Pharm, M.Pharm, PhD</td>
+            </tr>
+          
+            <tr onclick="showDetails('indukaka')">
+              <td>Indukaka Ipcowala College of Pharmacy</td>
+              <td>Anand</td>
+              <td>B.Pharm, M.Pharm</td>
+            </tr>
+          
+            <tr onclick="showDetails('charusat')">
+              <td>Ramanbhai Patel College of Pharmacy (CHARUSAT)</td>
+              <td>Changa</td>
+              <td>B.Pharm, M.Pharm, PhD</td>
+            </tr>
+          
+            <tr onclick="showDetails('sarvajanik')">
+              <td>Shri Sarvajanik Pharmacy College</td>
+              <td>Mehsana</td>
+              <td>B.Pharm, M.Pharm</td>
+            </tr>
+          
+            <tr onclick="showDetails('kbi')">
+              <td>K.B. Institute of Pharmaceutical Education & Research</td>
+              <td>Gandhinagar</td>
+              <td>B.Pharm, M.Pharm</td>
+            </tr>
+          
+            <tr onclick="showDetails('ganpat')">
+              <td>Ganpat University – Faculty of Pharmacy</td>
+              <td>Mehsana</td>
+              <td>D.Pharm, B.Pharm, M.Pharm</td>
+            </tr>
+          </table>
+          
+          <a class="back-link" href="index.php">⬅ Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Admission Counselling System | All Rights Reserved
+    </footer>
+    <script>
+        function showDetails(college) {
+        let info = {
+            lm: {
+              name: "LM College of Pharmacy",
+              desc: "LM College of Pharmacy is one of the oldest and most reputed pharmacy institutes in Gujarat, known for academic excellence, research, and strong alumni network.",
+              specialty: "Research-oriented education and strong industry collaboration."
+            },
+        
+            nirma: {
+              name: "Nirma University – Institute of Pharmacy",
+              desc: "Institute of Pharmacy at Nirma University offers high-quality pharmacy education with modern infrastructure and experienced faculty.",
+              specialty: "Industry-focused curriculum with research exposure."
+            },
+        
+            parul: {
+              name: "Parul University – Faculty of Pharmacy",
+              desc: "Parul University provides comprehensive pharmacy education with excellent lab facilities and placement support.",
+              specialty: "Wide range of programs and strong campus placements."
+            },
+        
+            indukaka: {
+              name: "Indukaka Ipcowala College of Pharmacy",
+              desc: "A reputed pharmacy college under CVM University, offering quality education at affordable fees.",
+              specialty: "Experienced faculty and academic excellence."
+            },
+        
+            charusat: {
+              name: "Ramanbhai Patel College of Pharmacy (CHARUSAT)",
+              desc: "CHARUSAT pharmacy institute is known for innovation, research, and strong academic structure.",
+              specialty: "Excellent research facilities and PhD programs."
+            },
+        
+            sarvajanik: {
+              name: "Shri Sarvajanik Pharmacy College",
+              desc: "This institute offers quality pharmacy education with focus on practical knowledge and skill development.",
+              specialty: "Strong academic discipline and affordable education."
+            },
+        
+            kbi: {
+              name: "K.B. Institute of Pharmaceutical Education & Research",
+              desc: "KBI Pharmacy College focuses on quality education, research, and ethical pharmaceutical practices.",
+              specialty: "Balanced academics and research exposure."
+            },
+        
+            ganpat: {
+              name: "Ganpat University – Faculty of Pharmacy",
+              desc: "Ganpat University offers industry-oriented pharmacy programs with modern laboratories and experienced faculty.",
+              specialty: "Strong industry exposure and practical training."
+            }
+          };
+        
+          // Update UI
+          document.getElementById("collegeTitle").innerText = data[college].name;
+          document.getElementById("collegeDesc").innerText = data[college].desc;
+          document.getElementById("collegeSpecial").innerText = data[college].specialty;
+        
+          // Show the description section
+          document.getElementById("collegeDetails").style.display = "block";
+        }
+        </script>
+        
+</body>
+</html>

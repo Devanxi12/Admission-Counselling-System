@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commerce Colleges in Gujarat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Commerce Colleges in Gujarat</h1>
+  </header>
+
+  <table>
+    <tr>
+      <th>Institution</th>
+      <th>Location</th>
+      <th>Programs Offered</th>
+      <th>Notable Features</th>
+    </tr>
+    <tr onclick="showDetails('hl')">
+      <td>H.L. College of Commerce</td>
+      <td>Ahmedabad</td>
+      <td>B.Com</td>
+      <td>NAAC A+, budget-friendly, reputable</td>
+    </tr>
+    <tr onclick="showDetails('xavier')">
+      <td>St. Xavier’s College</td>
+      <td>Ahmedabad</td>
+      <td>B.Com, BBA</td>
+      <td>UGC & NAAC A+, strong academics</td>
+    </tr>
+    <tr>
+      <td>Gujarat University</td>
+      <td>Ahmedabad</td>
+      <td>B.Com, M.Com (incl. online)</td>
+      <td>Low fees, new online B.Com from Nov 15, 2025</td>
+    </tr>
+    <tr>
+      <td>GLS University</td>
+      <td>Ahmedabad</td>
+      <td>B.Com, BBA</td>
+      <td>Industry links, active campus life</td>
+    </tr>
+    <tr>
+      <td>LJ University</td>
+      <td>Ahmedabad</td>
+      <td>B.Com (Hons), M.Com</td>
+      <td>UGC-approved undergraduate & postgraduate</td>
+    </tr>
+    <tr>
+      <td>Nirma University</td>
+      <td>Ahmedabad</td>
+      <td>B.Com (Hons), BBA</td>
+      <td>Market exposure, accredited</td>
+    </tr>
+    <tr>
+      <td>Ahmedabad University</td>
+      <td>Ahmedabad</td>
+      <td>B.Com (Hons), BBA</td>
+      <td>Top placements, AACSB & UGC accreditation</td>
+    </tr>
+    <tr>
+      <td>P.D.M. College of Commerce (PDMCC)</td>
+      <td>Rajkot</td>
+      <td>Commerce & Management</td>
+      <td>Well-equipped campus, regional choice</td>
+    </tr>
+    <tr>
+      <td>SDNIPGSC</td>
+      <td>Anand</td>
+      <td>M.Com</td>
+      <td>Postgraduate option</td>
+    </tr>
+    <tr>
+      <td>Kalol Institute of Management</td>
+      <td>Kalol</td>
+      <td>M.Phil in Commerce</td>
+      <td>Higher research degrees</td>
+    </tr>
+  </table>
+  
+  <div id="details" class="details-box"></div>
+
+  <a class="back-link" href="index.php">⬅ Back to Home</a>
+    <footer>
+    <p>&copy; 2025 Admission Counselling System | All Rights Reserved</p>
+  </footer>
+  <script>
+    function showDetails(univ) 
+    {
+      let info = {
+    hl:   `<h3>H.L. College of Commerce</h3>
+               <p>H.L. College of Commerce is one of the oldest and most reputed commerce colleges in Gujarat, known for academic excellence and affordable education.</p>
+               <p><strong>Specialty:</strong> "NAAC A+ accredited, budget-friendly fees, strong foundation in commerce and accounting."</p>
+               <p><a href="https://www.hlcollege.edu" target="_blank">Visit Website</a></p>`,
+    
+
+    xavier: 
+      `<h3> St. Xavier’s College, Ahmedabad</h3>
+      <p>St. Xavier’s College is an autonomous institution offering high-quality education with a focus on ethics, discipline, and academic rigor.",
+       <p><strong>Specialty:</strong>"UGC & NAAC A+ accredited, strong academics, specialized commerce programs."</p>
+      <p><a href="https://sxca.edu.in" target="_blank">Visit Website</a></p> `,
+
+    gu: {
+      name: "Gujarat University",
+      description:
+        "Gujarat University is a leading state university offering a wide range of undergraduate and postgraduate commerce programs.",
+      speciality:
+        "Low fees, traditional and online B.Com & M.Com programs, wide recognition.",
+      website: "https://www.gujaratuniversity.ac.in"
+    },
+
+    gls: {
+      name: "GLS University",
+      description:
+        "GLS University offers modern commerce education with industry exposure and an active campus environment.",
+      speciality:
+        "B.Com, BBA, FinTech focus, strong industry links and skill-based learning.",
+      website: "https://www.glsuniversity.ac.in"
+    },
+
+    lj: {
+      name: "LJ University",
+      description:
+        "LJ University is a multidisciplinary university offering commerce education with a practical and career-oriented approach.",
+      speciality:
+        "UGC-approved B.Com (Hons) and M.Com programs with industry exposure.",
+      website: "https://ljku.edu.in"
+    },
+
+    nirma: {
+      name: "Nirma University",
+      description:
+        "Nirma University is a prestigious private university offering commerce programs with strong academic and corporate exposure.",
+      speciality:
+        "B.Com (Hons), BBA, NAAC A+ accreditation, market-oriented curriculum.",
+      website: "https://commerce.nirmauni.ac.in"
+    },
+
+    au: {
+      name: "Ahmedabad University",
+      description:
+        "Ahmedabad University is a research-driven institution known for interdisciplinary education and strong placement outcomes.",
+      speciality:
+        "AACSB & UGC accredited, top placements, research-focused commerce programs.",
+      website: "https://ahduni.edu.in"
+    },
+
+    pdm: {
+      name: "P.D.M. College of Commerce, Rajkot",
+      description:
+        "PDM College of Commerce provides quality commerce education with a focus on regional accessibility.",
+      speciality:
+        "Affiliated to Saurashtra University, strong foundation in commerce studies.",
+      website: "https://www.pdmcc.org"
+    },
+
+    sdnipgsc: {
+      name: "SDNIPGSC, Anand",
+      description:
+        "SDNIPGSC offers postgraduate commerce education with a focus on advanced academic learning.",
+      speciality:
+        "Dedicated M.Com programs for higher commerce specialization.",
+      website: "https://www.gujaratuniversity.ac.in"
+    },
+
+    kalol: {
+      name: "Kalol Institute of Management",
+      description:
+        "Kalol Institute of Management focuses on management and higher commerce education near Ahmedabad.",
+      speciality:
+        "Postgraduate and research-oriented programs in commerce and management.",
+      website: "https://kirc.ac.in"
+    }
+
+      };
+      document.getElementById('details').innerHTML = info[univ];
+      document.getElementById('details').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
